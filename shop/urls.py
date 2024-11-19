@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from 
+
+from inventory import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', views.home, name="index"),
+    path('shop/' views.inventoryapp, name='inveapp')
+],
