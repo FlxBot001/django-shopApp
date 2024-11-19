@@ -18,9 +18,21 @@
         <a class="navbar-brand" href="{% url 'home' %}">Inventory App</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{% url 'category_list' %}">Categories</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'supplier_list' %}">Suppliers</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'add_product' %}">Add Product</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'category_list' %}">
+                        Categories
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'supplier_list' %}">
+                        Suppliers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'add_product' %}">
+                        Add Product
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
